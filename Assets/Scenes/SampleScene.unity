@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 1016124107}
   - component: {fileID: 1016124106}
   - component: {fileID: 1016124105}
+  - component: {fileID: 1016124108}
   m_Layer: 0
   m_Name: PlayerSample1
   m_TagString: Untagged
@@ -576,6 +577,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 1016124105}
+--- !u!114 &1016124108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016124100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f2545de24ecf44c87c1065664f15c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flightStatus: {fileID: 11400000, guid: f7086b87b506c7a43a1c059ccd218a4f, type: 2}
 --- !u!1 &1647418918
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +605,7 @@ GameObject:
   - component: {fileID: 1647418925}
   - component: {fileID: 1647418924}
   - component: {fileID: 1647418923}
+  - component: {fileID: 1647418926}
   m_Layer: 0
   m_Name: PlayerSample2
   m_TagString: Untagged
@@ -812,6 +827,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1647418919}
   playerMove: {fileID: 1647418924}
+--- !u!114 &1647418926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647418918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f2545de24ecf44c87c1065664f15c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flightStatus: {fileID: 11400000, guid: f7086b87b506c7a43a1c059ccd218a4f, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
