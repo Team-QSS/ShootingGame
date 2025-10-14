@@ -10,6 +10,7 @@ public class PlayerInput : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         var dir = context.ReadValue<Vector2>();
+        onMove?.Invoke(dir);
         //Debug.Log(dir);
     }
     public void OnAvoid(InputAction.CallbackContext context)
