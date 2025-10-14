@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+//제한이 없는 스탯
 public class UnLimitedStat<T> : Stat<T> where T : IComparable<T>
 {
     public event Action<T> onChanged;

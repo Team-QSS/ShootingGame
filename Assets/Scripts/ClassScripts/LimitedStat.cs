@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+//제한이 있는 경계값이 존제하는 스탯
 public class LimitedStat<T> : Stat<T> where T : IComparable<T>
 {
     public event Action<T, T> onChanged;

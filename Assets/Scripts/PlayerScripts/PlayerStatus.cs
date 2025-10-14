@@ -7,6 +7,7 @@ public class PlayerStatus : MonoBehaviour
     private LimitedStat<int> ultgauge=new();
     private UnLimitedStat<float> attackSpeed = new();
 
+    //스탯 초기화
     public void ResetStat()
     {
         hp.minValue = 0;
@@ -17,7 +18,7 @@ public class PlayerStatus : MonoBehaviour
         ultgauge.Value = 0;
         attackSpeed.Value = flightStatus.attackSpeed;
     }
-
+    //스탯 출력(디버그용)
     private void PrintStat()
     {
         Debug.Log(hp.Value);
