@@ -1,14 +1,14 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "FlightStatus", menuName = "Scriptable Objects/FlightStatus")]
-//ÇÃ·¹ÀÌ¾î ½ºÅÈ ½ºÅ©¸³ÅÍºí ¿ÀºêÁ§Æ®
+//ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ï¿½Íºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
 public class FlightStatus : ScriptableObject
 {
-    //±âº» hp
+    //í”Œë ˆì´ì–´ hp
     public int maxLifePoints;
-    //±âº» °ø¼Ó
+    //í”Œë ˆì´ì–´ ê³µì†
     public int attackSpeed;
-    //±âº» ±Ã±Ø±â ½ºÅÈ
+    //í”Œë ˆì´ì–´ ê¶ê·¹ê¸° ìŠ¤íƒ
     public int maxUltStack; 
 
 }

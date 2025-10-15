@@ -1,5 +1,5 @@
 using UnityEngine;
-// ¾àÁh ¿¬°áÀ» µ½´Â Áß°è½ºÅ©¸³Æ®µéÀ» À§ÇÑ ÀÎÅÍÆäÀÌ½º
+//ì•½ì—°ê²°ì´ í•„ìš”í• ë•Œ ì‚¬ìš©
 public interface IConnecter
 {
     public void Connect();
