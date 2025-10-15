@@ -1,3 +1,4 @@
+using System.Collections;
 using ScriptableObjectScripts;
 using UnityEngine;
 using UtilScripts;
@@ -19,21 +20,25 @@ namespace ManagerScripts
         {
             _startTime = Time.fixedTime;
             _waveInfo = waveInfo;
+            StartCoroutine(EnemySpawnRoutine());
         }
 
-        public void Update()
+        public IEnumerator EnemySpawnRoutine()
         {
-            if (_waveInfo.enemyList.Length <= _enemyIndex)
+            while (true)
             {
-                if (_enemyCount <= 0) StageManager.Instance.ActivateNextWave();
-                return;
-            }
-            if (_waveInfo.enemyList[_enemyIndex] >= FlowedTime)
-            {
+                if (_waveInfo.enemyList.Length <= _enemyIndex)
+                {
+                    if (_enemyCount <= 0) StageManager.Instance.ActivateNextWave();
+                    yield return null;
+                    continue;
+                }
+                if (!(_waveInfo.enemyList[_enemyIndex] >= FlowedTime)) continue;
                 _enemyCount++;
                 // 추후 적 코드 작성시 추가
                 // enemyList[_enemyIndex].Spawn();
                 // enemyList[_enemyIndex].OnRemove += () => _enemyCount--;
+                yield return null;
             }
         }
     }
