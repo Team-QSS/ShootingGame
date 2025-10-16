@@ -13,9 +13,9 @@ namespace ManagerScripts
         private float FlowedTime => Time.fixedTime - _startTime;
 
         [Header("Wave Info")]
-        private WaveInfo _waveInfo;
+        private WaveInfoSO _waveInfo;
         
-        public void StartWave(WaveInfo waveInfo)
+        public void StartWave(WaveInfoSO waveInfo)
         {
             _startTime = Time.fixedTime;
             _waveInfo = waveInfo;
