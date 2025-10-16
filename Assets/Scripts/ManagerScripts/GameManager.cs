@@ -7,7 +7,7 @@ namespace ManagerScripts
     public class GameManager : SingleMono<GameManager>
     {
         [Header("Main Game Statics")]
-        [SerializeField] private StageInfo[] stages;
+        [SerializeField] private StageInfoSO[] stages;
         private int _currentStage;
         
         private void Start()

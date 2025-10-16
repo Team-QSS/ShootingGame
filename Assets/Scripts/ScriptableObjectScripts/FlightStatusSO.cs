@@ -1,8 +1,8 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "FlightStatus", menuName = "Scriptable Objects/FlightStatus")]
+[CreateAssetMenu(fileName = "FlightStatusSO", menuName = "Scriptable Objects/FlightStatusSO")]
 //�÷��̾� ���� ��ũ���ͺ� ������Ʈ
-public class FlightStatus : ScriptableObject
+public class FlightStatusSO : ScriptableObject
 {
     //플레이어 hp
     public int maxLifePoints;

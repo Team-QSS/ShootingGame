@@ -5,10 +5,14 @@ using UtilScripts;
 
 public enum PoolObjectType
 {
-    Dummy
+    Dummy,
+    WayPointA,
+    WayPointB,
+    WayPointA1,
+    EnemyA
 }
 
-public class ObjectPoolManager : SingleMono<ObjectPoolManager>
+public class ObjectPoolManager : SceneSingleMono<ObjectPoolManager>
 {
     [FormerlySerializedAs("retruningParentObj")] [SerializeField] private GameObject returningParentObj;
     private GameObject _currentReturningParentObj;

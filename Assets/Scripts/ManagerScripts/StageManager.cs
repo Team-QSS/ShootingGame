@@ -5,7 +5,7 @@ namespace ManagerScripts
 {
     public class StageManager : SingleMono<StageManager>
     {
-        private StageInfo _stageInfo;
+        private StageInfoSO _stageInfo;
         private int _waveIndex;
 
         private void Start()
@@ -13,7 +13,7 @@ namespace ManagerScripts
             ActivateNextWave();
         }
 
-        public void StartStage(StageInfo stageInfo)
+        public void StartStage(StageInfoSO stageInfo)
         {
             _stageInfo = stageInfo;
         }
