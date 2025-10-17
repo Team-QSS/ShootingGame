@@ -7,14 +7,13 @@ public class RaingerMinionBehaviour : MonoBehaviour,IBehaviorSetter
     public Fsm fsm;
     public WayPointArray wayPointArr;
     public EnemySkillCooldown enemyskillCooldown = new();
-    public GameObject target;
+    [NonSerialized] public GameObject target;
     public event Action<Vector2> onMove;
     public event Action<float> onMoveSpeedChange;
     public IStat<EnemyRuntimeStat> iEnemyRuntimeStat;
     //public event Action
     public void Set()
     {
-        wayPointArr.SetAllSplines(iEnemyRuntimeStat.GetStat().moveSpeed);
         var patrolUpDown = new RaingerMinionPatrolUpDown(this);
         var patrolLeftRight = new RaingerMinionPatrolLeftRight(this);
         fsm.RegisterState(EntityMoves.PatrolA,patrolUpDown);
@@ -43,7 +42,7 @@ public class RaingerMinionBehaviour : MonoBehaviour,IBehaviorSetter
         public void Enter()
         {
             _behaviour.onMoveSpeedChange?.Invoke(_behaviour.iEnemyRuntimeStat.GetStat().moveSpeed*4);
-            _behaviour.target=_behaviour.wayPointArr.GetWayPointTarget(1);
+            _behaviour.target=_behaviour.wayPointArr.GetWayPointTarget(_behaviour.wayPointArr.GetIndexModular(1));
         }
 
         public void Exit()
@@ -72,7 +71,7 @@ public class RaingerMinionBehaviour : MonoBehaviour,IBehaviorSetter
         public void Enter()
         {
             _behaviour.onMoveSpeedChange?.Invoke(_behaviour.iEnemyRuntimeStat.GetStat().moveSpeed*4);
-            _behaviour.target=_behaviour.wayPointArr.GetWayPointTarget(0);
+            _behaviour.target=_behaviour.wayPointArr.GetWayPointTarget(_behaviour.wayPointArr.GetIndexModular(0));
         }
 
         public void Exit()

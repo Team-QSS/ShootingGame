@@ -4,27 +4,31 @@ using UnityEngine;
 [System.Serializable]
 public class WayPointArray : MonoBehaviour
 {
-    [SerializeField] private List<WayPoints> wayPoints;
+    //[SerializeField] private List<WayPoints> wayPoints;
+    [SerializeField] private List<int> wayPointIndexSet = new();
     private GameObject _currentWayPoint;
     private int _currentIndex = -1;
+    private float _moveSpeed;
 
-    public void AddWayPoint(WayPoints wp)
+    public void AddWayPointIndex(int index)
     {
-        wayPoints.Add(wp);
+        if (!wayPointIndexSet.Contains(index))
+        {
+            wayPointIndexSet.Add(index);
+        }
     }
 
-    public void RemoveWayPoint(WayPoints wp)
+    public void RemoveWayPointIndex(int index)
     {
-        int index = wayPoints.IndexOf(wp);
-        if (index >= 0)
+        if (wayPointIndexSet.Contains(index))
         {
-            wayPoints.RemoveAt(index);
+            wayPointIndexSet.Remove(index);
         }
     }
 
     public GameObject GetWayPointTarget(int index)
     {
-        if (index < 0 || index >= wayPoints.Count)
+        if (index < 0 || index >= wayPointIndexSet.Count)
         {
             return null;
         }
@@ -37,16 +41,24 @@ public class WayPointArray : MonoBehaviour
         }
 
         _currentIndex = index;
-        _currentWayPoint = poolManager.Get(wayPoints[index].gameObject, Vector2.zero, Vector2.zero);
-        
-        return _currentWayPoint.GetComponent<WayPoints>().target;
+        _currentWayPoint = poolManager.Get(EventManager.Instance?.Invoke<GameObject>(EventKey.GetWayPointFromIndex,index), Vector2.zero, Vector2.zero);
+        var wayPoint = _currentWayPoint.GetComponent<WayPoints>();
+        wayPoint.SetSpline(_moveSpeed);
+        return wayPoint.target;
     }
 
-    public void SetAllSplines(float speed)
+    public void SetMoveSpeed(float moveSpeed)
     {
-        foreach (WayPoints wp in wayPoints)
-        {
-            wp.SetSpline(speed);
-        }
+        _moveSpeed = moveSpeed;
+    }
+
+    public int GetIndexModular(int index)
+    {
+        return index%wayPointIndexSet.Count;
+    }
+
+    public bool IsIndexAble(int index)
+    {
+        return index >= 0 && index < wayPointIndexSet.Count;
     }
 }
