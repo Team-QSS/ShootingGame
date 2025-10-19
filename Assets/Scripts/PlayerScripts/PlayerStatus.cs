@@ -2,18 +2,27 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour,IStatusSetter
 {
-    [SerializeField] private FlightStatusSO flightStatus;
+    [SerializeField] private FlightDataSO flightData;
     public PlayerRuntimeStat playerRuntimeStat;
 
     public void ResetStat()
     {
         playerRuntimeStat.hp.minValue = 0;
-        playerRuntimeStat.hp.maxValue = flightStatus.maxLifePoints;
+        playerRuntimeStat.hp.maxValue = flightData.maxLifePoints;
         playerRuntimeStat.hp.Value = playerRuntimeStat.hp.maxValue;
         playerRuntimeStat.ultgauge.minValue = 0;
-        playerRuntimeStat.ultgauge.maxValue = flightStatus.maxUltStack;
+        playerRuntimeStat.ultgauge.maxValue = flightData.maxUltStack;
         playerRuntimeStat.ultgauge.Value = 0;
-        playerRuntimeStat.attackSpeed.Value = flightStatus.attackSpeed;
+        playerRuntimeStat.attackSpeed.Value = flightData.attackSpeed;
+    }
+
+    public GameObject SendToUseUlt()
+    {
+        if (playerRuntimeStat.ultgauge.Value == playerRuntimeStat.ultgauge.maxValue)
+        {
+            return flightData.skillEventPrefab;
+        }
+        return null;
     }
 
     private void PrintStat()

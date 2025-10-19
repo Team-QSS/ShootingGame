@@ -4,13 +4,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
-    //ÇØ´ç Å°¸¦ ´©¸¦¶§ ½ÇÇàÇÒ ÀÌº¥Æ®µé
-    //ÀÌµ¿½Ã
     public event Action<Vector2> onMove;
-    //È¸ÇÇ/±Ã±Ø±â »ç¿ë ½Ã
     public event Action onAvoid;
-    //ÆòÅ¸ ½Ã
-    public event Action onFire;
+    public event Func<GameObject> onUseUlt;
     public void OnMove(InputAction.CallbackContext context)
     {
         var dir = context.ReadValue<Vector2>();
@@ -29,7 +25,15 @@ public class PlayerInput : MonoBehaviour
     {
         if (context.started)
         {
-            //Debug.Log("Ult!!");
+            var obj = onUseUlt?.Invoke();
+            if (obj != null)
+            {
+                ObjectPoolManager.Instance.Get(obj, Vector2.zero, Vector3.zero);
+            }
+            else
+            {
+                Debug.Log("ê²Œì´ì§€ê°€ ì—†ê±°ë‚˜ ëŠ¥ë ¥ì´ ì—†ìŠµë‹ˆë‹¤..");
+            }
         }
     }
 }
