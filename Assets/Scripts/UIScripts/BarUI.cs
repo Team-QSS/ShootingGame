@@ -14,7 +14,6 @@ namespace UIScripts
 
         public void OnDrawBar(int current, int max)
         {
-            Debug.Log("OnDrawBar");
             if (current > _barObjs.Count)
             {
                 for (int i = _barObjs.Count; i < current; i++)

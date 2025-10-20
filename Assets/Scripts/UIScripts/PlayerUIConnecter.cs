@@ -26,6 +26,8 @@ namespace UIScripts
         {
             playerStatus.playerRuntimeStat.hp.onChanged += hpBarUI.OnDrawBar;
             playerStatus.playerRuntimeStat.ultgauge.onChanged += ultimateBarUI.OnDrawBar;
+            hpBarUI.OnDrawBar(playerStatus.playerRuntimeStat.hp.Value,playerStatus.playerRuntimeStat.hp.maxValue);
+            ultimateBarUI.OnDrawBar(playerStatus.playerRuntimeStat.ultgauge.Value,playerStatus.playerRuntimeStat.ultgauge.maxValue);
         }
 
         public void Disconnect()
