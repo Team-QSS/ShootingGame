@@ -3,10 +3,11 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb2D;
-    //ÀÌµ¿ ÇÔ¼ö
+    [SerializeField] private float speed;
+    //ï¿½Ìµï¿½ ï¿½Ô¼ï¿½
     public void SetMove(Vector2 dir)
     {
-        rb2D.linearVelocity = dir;
+        rb2D.linearVelocity = dir*speed;
     }
 
 }

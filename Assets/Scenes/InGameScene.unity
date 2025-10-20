@@ -414,6 +414,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2265189237198619891, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2265189237198619891, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4795603983200001938, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14
@@ -454,6 +462,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4865899739644605091, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd50c6b801050b74dbbcddfe2e008f05, type: 3}
     - target: {fileID: 5771351344589191979, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
       propertyPath: hpBarUI
       value: 
