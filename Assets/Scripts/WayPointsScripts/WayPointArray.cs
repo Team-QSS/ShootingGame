@@ -42,6 +42,7 @@ public class WayPointArray : MonoBehaviour
 
         _currentIndex = index;
         _currentWayPoint = poolManager.Get(WayPointManager.Instance.GetWayPointFromIdx(index), Vector2.zero, Vector2.zero);
+        Debug.Log(_currentWayPoint);
         var wayPoint = _currentWayPoint.GetComponent<WayPoints>();
         wayPoint.SetSpline(_moveSpeed);
         return wayPoint.target;
@@ -54,7 +55,7 @@ public class WayPointArray : MonoBehaviour
 
     public int GetIndexModular(int index)
     {
-        return index%wayPointIndexSet.Count;
+        return wayPointIndexSet[index%wayPointIndexSet.Count];
     }
 
     public bool IsIndexAble(int index)

@@ -22,13 +22,13 @@ public class RaingerMinionBehaviour : MonoBehaviour,IBehaviorSetter
     }
     
 //디버깅용
-    /*private void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             fsm.ChangeState(EntityMoves.PatrolB);
         }
-    }*/
+    }
     
     
 
