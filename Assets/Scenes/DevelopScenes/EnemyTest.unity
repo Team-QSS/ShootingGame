@@ -212,7 +212,7 @@ Transform:
   m_GameObject: {fileID: 125407259}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.55, y: 6.37, z: 0}
+  m_LocalPosition: {x: 0.004, y: 5.994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -244,7 +244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RaingerMinionBehaviour
   fsm: {fileID: 125407262}
   wayPointArr: {fileID: 125407264}
-  target: {fileID: 0}
 --- !u!114 &125407264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,9 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71f96f6b06ec7f74b92fb15b015fca54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WayPointArray
-  wayPoints:
-  - {fileID: 3640072903650126494, guid: 151c0018ceecbba4e89bf44aa6e4d2a0, type: 3}
-  - {fileID: 3640072903650126494, guid: 151c0018ceecbba4e89bf44aa6e4d2a0, type: 3}
+  wayPointIndexSet: 000000000000000000000000
 --- !u!114 &125407265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +285,7 @@ MonoBehaviour:
   enemyStatus: {fileID: 125407265}
   raingerMinionBehaviour: {fileID: 125407263}
   enemyMove: {fileID: 125407268}
+  wayPointArray: {fileID: 125407264}
 --- !u!50 &125407267
 Rigidbody2D:
   serializedVersion: 5
@@ -354,6 +352,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectTypeDefiner
   poolObjectType: 4
+--- !u!1 &911056949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911056950}
+  - component: {fileID: 911056951}
+  m_Layer: 0
+  m_Name: WayPointsBank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911056950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911056949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &911056951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911056949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cceb45bbea0849c41b0ff582d56ef00f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WayPointManager
+  wayPointArraySO: {fileID: 11400000, guid: a49d200541a3d9f4c8fc900ac81e99d7, type: 2}
+--- !u!1 &1198481681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198481683}
+  - component: {fileID: 1198481682}
+  m_Layer: 0
+  m_Name: EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1198481682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198481681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3fdd19f0b134c245be2ad378b57d2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventManager
+--- !u!4 &1198481683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198481681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.86111, y: 2.57875, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236941688
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,3 +630,5 @@ SceneRoots:
   - {fileID: 1570088748}
   - {fileID: 125407261}
   - {fileID: 1236941690}
+  - {fileID: 911056950}
+  - {fileID: 1198481683}

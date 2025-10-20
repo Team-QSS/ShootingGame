@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cad307fc281704e86c383e5eccedc2, type: 3}
+  m_Name: WayPointArraySO
+  m_EditorClassIdentifier: Assembly-CSharp::WayPointArraySO
+  wayPoints:
+  - {fileID: 3640072903650126494, guid: 172bd8247a8bc864e83de43bae3b38f7, type: 3}
+  - {fileID: 3640072903650126494, guid: 151c0018ceecbba4e89bf44aa6e4d2a0, type: 3}
+  - {fileID: 3640072903650126494, guid: 3e28c50b0f2a81e42af3811a8187a1d6, type: 3}
