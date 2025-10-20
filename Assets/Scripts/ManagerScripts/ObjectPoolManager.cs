@@ -10,7 +10,8 @@ public enum PoolObjectType
     WayPointB,
     WayPointA1,
     EnemyA,
-    SkillA
+    SkillA,
+    Bar
 }
 
 public class ObjectPoolManager : SceneSingleMono<ObjectPoolManager>
