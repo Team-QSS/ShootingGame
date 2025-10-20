@@ -41,7 +41,7 @@ public class WayPointArray : MonoBehaviour
         }
 
         _currentIndex = index;
-        _currentWayPoint = poolManager.Get(EventManager.Instance?.Invoke<GameObject>(EventKey.GetWayPointFromIndex,index), Vector2.zero, Vector2.zero);
+        _currentWayPoint = poolManager.Get(WayPointManager.Instance.GetWayPointFromIdx(index), Vector2.zero, Vector2.zero);
         var wayPoint = _currentWayPoint.GetComponent<WayPoints>();
         wayPoint.SetSpline(_moveSpeed);
         return wayPoint.target;
