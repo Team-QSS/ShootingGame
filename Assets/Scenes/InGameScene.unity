@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: ultimateBarUI
       value: 
       objectReference: {fileID: 1219424099}
+    - target: {fileID: 6561426411028979102, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
+      propertyPath: boundingAmount
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 7865005881757006075, guid: ae03ba0d4822e604b9d115fc612c6bcb, type: 3}
       propertyPath: m_Name
       value: PlayerSample

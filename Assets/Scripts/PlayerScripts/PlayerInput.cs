@@ -32,7 +32,7 @@ public class PlayerInput : MonoBehaviour
             }
             else
             {
-                Debug.Log("게이지가 없거나 능력이 없습니다..");
+                
             }
         }
     }

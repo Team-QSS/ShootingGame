@@ -6,7 +6,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     private Dictionary<string, Action<GameObject>> _hitHash = new();
 
-    private void Start()
+    private void Awake()
     {
         _hitHash.Add("Enemy",HitByEnemy);
         _hitHash.Add("Damager",HitByDamager);
@@ -23,7 +23,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public void HitByEnemy(GameObject other)
     {
-        //other.GetComponent<EnemyStatus>()
+        
     }
 
     public void HitByDamager(GameObject other)
