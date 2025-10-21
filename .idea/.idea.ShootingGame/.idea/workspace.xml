@@ -7,18 +7,10 @@
     <list default="true" id="372d798a-ec44-4ea8-afe8-e8540e471c68" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ObjParent.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ObjParent.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaypointA-1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaypointA-1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaypointA.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaypointA.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaypointB.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaypointB.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevelopScenes/PlayerUI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevelopScenes/PlayerUI.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/ObjectPoolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/ObjectPoolManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/BarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/BarUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/PlayerUIConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/PlayerUIConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerPrefab/PlayerSample.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerPrefab/PlayerSample.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerInputMoveConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerInputMoveConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerMove.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,20 +57,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "InGameScene",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Collisions&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.2.7f2\Editor\Unity.exe" />
@@ -145,7 +137,8 @@
       <workItem from="1760450242280" duration="34592000" />
       <workItem from="1760680023866" duration="2262000" />
       <workItem from="1760721450989" duration="1791000" />
-      <workItem from="1760879514653" duration="6739000" />
+      <workItem from="1760879514653" duration="10970000" />
+      <workItem from="1761014453840" duration="5028000" />
     </task>
     <servers />
   </component>
@@ -188,6 +181,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UIScripts/BarUI.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Unity\ShootingGame\Assets\Scripts\UIScripts\BarUI.cs" containingFunctionPresentation="메서드 'OnDrawBar'">
+            <startOffsets>
+              <option value="756" />
+            </startOffsets>
+            <endOffsets>
+              <option value="757" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
