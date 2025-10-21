@@ -9692,6 +9692,7 @@ GameObject:
   - component: {fileID: 2265189237198619891}
   - component: {fileID: 8615543002021891084}
   - component: {fileID: 6561426411028979102}
+  - component: {fileID: 3122904539764940514}
   m_Layer: 0
   m_Name: PlayerSample
   m_TagString: Untagged
@@ -10021,3 +10022,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bounding
   boundingAmount: 55
+--- !u!114 &3122904539764940514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7865005881757006075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b62491434188af479924a03b0cdf2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
