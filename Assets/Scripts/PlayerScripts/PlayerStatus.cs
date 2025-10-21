@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour,IStatusSetter
 {
     [SerializeField] private FlightDataSO flightData;
     public PlayerRuntimeStat playerRuntimeStat;
+    [SerializeField] private bool isInfinite;
+    public event Action onInfinite;
 
     public void ResetStat()
     {
@@ -23,6 +26,20 @@ public class PlayerStatus : MonoBehaviour,IStatusSetter
             return flightData.skillEventPrefab;
         }
         return null;
+    }
+
+    public void SetInfinite(bool infinite)
+    {
+        if (infinite)
+        {
+            onInfinite?.Invoke();
+        }
+        isInfinite = infinite;
+    }
+
+    public bool GetInfinite()
+    {
+        return isInfinite;
     }
 
     private void PrintStat()
