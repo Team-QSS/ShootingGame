@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="72a743b8-4625-4694-a165-5bd810a9a327" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Buttons/Buttons.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Buttons/Buttons.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Title/Title.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Title/Title.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Title/TitleAppear.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Title/TitleAppear.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/PF스타더스트 3.0 (3) SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/PF스타더스트 3.0 (3) SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meterial/Shader Graphs_SpaceShip.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meterial/Shader Graphs_SpaceShip.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevelopScenes/PickPannel.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevelopScenes/PickPannel.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TitleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TitleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpaceShip.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/SpaceShip.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +45,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InterfaceScripts/IUIInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerVisual.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataArray.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts/BarPart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonIndexInputConnecter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonInputter.cs" root0="FORCE_HIGHLIGHTING" />
