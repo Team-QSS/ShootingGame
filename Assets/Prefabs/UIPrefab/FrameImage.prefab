@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 7779895950082719468}
   - component: {fileID: 3544220428544170470}
   - component: {fileID: 8637443890706175037}
+  - component: {fileID: 2141229443684400288}
   m_Layer: 5
   m_Name: FrameImage
   m_TagString: Untagged
@@ -151,3 +152,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2141229443684400288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185683531308584839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4615c7287f67d9946821a873f5a6bd64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FrameUI
+  flightCode: 0

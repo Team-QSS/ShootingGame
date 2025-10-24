@@ -6,7 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="72a743b8-4625-4694-a165-5bd810a9a327" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UIPrefab/FrameImage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UIPrefab/FrameImage.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TitleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TitleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/ChainSawSO.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/ChainSawSO.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/FlightsDataArraySO.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/FlightsDataArraySO.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/GunnerSO.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/GunnerSO.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/HunterSO.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/HunterSO.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/SheildSO.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/SheildSO.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/TravelerSO.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsInfoSO/TravelerSO.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InterfaceScripts/IUIInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InterfaceScripts/IUIInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonIndexInputConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonIndexInputConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonInputter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonInputter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonsIndexer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonsIndexer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/FlightsGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/FlightsGrid.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +67,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InterfaceScripts/IUIInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerVisual.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataArray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts/BarPart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonIndexInputConnecter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UtilScripts/SceneSingleMono.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WayPointsScripts/WayPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@1cb7d86fc7ff/Runtime/SplineAnimate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@f250afc9b68d/Runtime/UGUI/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8

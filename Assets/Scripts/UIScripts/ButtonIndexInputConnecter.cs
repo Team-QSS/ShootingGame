@@ -16,6 +16,7 @@ public class ButtonIndexInputConnecter : MonoBehaviour,IConnecter
             o.GetComponent<ButtonUI>().onHover += buttonsIndexer.OnSet;
         }
         buttonInputter.onMove+=buttonsIndexer.OnMove;
+        buttonInputter.onConfrim+=buttonsIndexer.ExeTarget;
     }
 
     public void Disconnect()
@@ -25,5 +26,6 @@ public class ButtonIndexInputConnecter : MonoBehaviour,IConnecter
             o.GetComponent<ButtonUI>().onHover -= buttonsIndexer.OnSet;
         }
         buttonInputter.onMove-=buttonsIndexer.OnMove;
+        buttonInputter.onConfrim-=buttonsIndexer.ExeTarget;
     }
 }

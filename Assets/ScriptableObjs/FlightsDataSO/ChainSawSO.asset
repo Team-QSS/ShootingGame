@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7486b3952266ae74597a3ab754022ebc, type: 3}
   m_Name: ChainSawSO
   m_EditorClassIdentifier: Assembly-CSharp::FlightsDataSO
+  code: 1
   flightName: "\uCCB4\uC778\uC18C"
   flightSprite: {fileID: 21300000, guid: a0942762a4f92744f8e71e6abac93ef6, type: 3}
   flightDescription: "\uD558\uC774\uD37C \uB8E8\uD504 \uC0AC\uAC74 \uC774\uC804\uC5D4

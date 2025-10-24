@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7486b3952266ae74597a3ab754022ebc, type: 3}
   m_Name: SheildSO
   m_EditorClassIdentifier: Assembly-CSharp::FlightsDataSO
+  code: 2
   flightName: "\uBC29\uBCBD"
   flightSprite: {fileID: 21300000, guid: f7c6eb5d30984f04b8f08338f3a1eedd, type: 3}
   flightDescription: "\uD558\uC774\uD37C\uB8E8\uD504\uB97C \uAC1C\uCC99\uD558\uAE30

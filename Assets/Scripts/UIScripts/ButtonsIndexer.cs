@@ -22,7 +22,7 @@ public class ButtonsIndexer : MonoBehaviour
     {
         startIndex %= buttons.Length;
         var pointerEventData = new PointerEventData(EventSystem.current);
-        buttons[startIndex].GetComponent<IPointerExitHandler>().OnPointerExit(pointerEventData);
+        buttons[startIndex].GetComponent<IUIInteraction>().ExitInteraction();
     }
 
     public void OnMove(int direction)
@@ -40,6 +40,12 @@ public class ButtonsIndexer : MonoBehaviour
     {
         ExitTarget();
         startIndex = index;
+    }
+
+    public void ExeTarget()
+    {
+        var pointerEventData = new PointerEventData(EventSystem.current);
+        buttons[startIndex].GetComponent<IPointerClickHandler>().OnPointerClick(pointerEventData);
     }
 
 }

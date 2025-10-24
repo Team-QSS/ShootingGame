@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ButtonInputter : MonoBehaviour
+public class FrameInputter : MonoBehaviour,
 {
     public event Action<int> onMove;
     public event Action onConfrim;

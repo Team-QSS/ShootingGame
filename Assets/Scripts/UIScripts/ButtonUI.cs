@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using Unity.VisualScripting;
 
-public class ButtonUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public class ButtonUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,IUIInteraction
 {
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private float hoverScale = 1.2f;  
@@ -32,11 +32,11 @@ public class ButtonUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
         StartScaleCoroutine(hoverScale);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    public void ExitInteraction()
     {
         StartScaleCoroutine(1f);
     }
-
+    
     public virtual void OnInteract()
     {
         
