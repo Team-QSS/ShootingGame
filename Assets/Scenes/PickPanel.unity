@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 471463569}
   - component: {fileID: 471463568}
   m_Layer: 5
-  m_Name: ChooseYourCharacterText
+  m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -136}
-  m_SizeDelta: {x: 590.05, y: 81.67999}
+  m_AnchoredPosition: {x: 0, y: -131}
+  m_SizeDelta: {x: 824.08, y: 81.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471463568
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uCE90\uB9AD\uD130\uB97C \uACE0\uB974\uC138\uC694"
+  m_text: "\uD0D1\uC2B9\uD560 \uC6B0\uC8FC\uC120\uC744 \uACE0\uB974\uC138\uC694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfd96e62d5ef8134fb1532be0aea668a, type: 2}
   m_sharedMaterial: {fileID: 1024991077827754288, guid: dfd96e62d5ef8134fb1532be0aea668a, type: 2}
@@ -210,8 +210,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -264,7 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 574393981}
-  - component: {fileID: 574393980}
+  - component: {fileID: 574393982}
   m_Layer: 0
   m_Name: FrameLogic
   m_TagString: Untagged
@@ -272,18 +272,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &574393980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574393979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57d42517c545b6f42a8d1b9d5e18e7d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FrameInputter
 --- !u!4 &574393981
 Transform:
   m_ObjectHideFlags: 0
@@ -299,6 +287,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &574393982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574393979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d76c5548873f64c95ea836284e10aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPickConnecter
+  currentPlayers: 0
+  playerPicks:
+  - {fileID: 1120388833}
+  - {fileID: 1666696197}
+  playerInputs:
+  - {fileID: 814148402}
+  - {fileID: 1372214217}
+  flightsGrid: {fileID: 1162864715}
 --- !u!1 &691814238
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +453,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 814148400}
+  - component: {fileID: 814148401}
+  - component: {fileID: 814148402}
   m_Layer: 0
   m_Name: PlayerInput1
   m_TagString: Untagged
@@ -467,6 +477,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814148401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814148399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 115e08ed2312b5947bc3187087ed1675, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 814148402}
+        m_TargetAssemblyTypeName: FrameInputter, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ef550418-ae04-473d-9714-1a628fd78a32
+    m_ActionName: 'Player1/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 814148402}
+        m_TargetAssemblyTypeName: FrameInputter, Assembly-CSharp
+        m_MethodName: OnConfirm
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5b499c91-44bd-426a-abd9-84e2516afd83
+    m_ActionName: 'Player1/Avoid[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 814148402}
+        m_TargetAssemblyTypeName: FrameInputter, Assembly-CSharp
+        m_MethodName: OnCancel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4952ea87-02c6-46b5-b416-f8fee1573289
+    m_ActionName: 'Player1/UseUlt[/Keyboard/e]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player1
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &814148402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814148399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d42517c545b6f42a8d1b9d5e18e7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FrameInputter
 --- !u!1 &1120388829
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +578,7 @@ GameObject:
   - component: {fileID: 1120388830}
   - component: {fileID: 1120388832}
   - component: {fileID: 1120388831}
+  - component: {fileID: 1120388833}
   m_Layer: 5
   m_Name: Red
   m_TagString: Untagged
@@ -542,6 +643,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120388829}
   m_CullTransparentMesh: 1
+--- !u!114 &1120388833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120388829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d96c4bba6cd3e147ac5102ef1e57590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPickUI
 --- !u!1 &1120491536
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,11 +816,11 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
-  m_StartAxis: 1
+  m_StartAxis: 0
   m_CellSize: {x: 150, y: 150}
   m_Spacing: {x: 50, y: 50}
-  m_Constraint: 1
-  m_ConstraintCount: 5
+  m_Constraint: 2
+  m_ConstraintCount: 2
 --- !u!114 &1162864715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,7 +835,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlightsGrid
   flightsDataArraySO: {fileID: 11400000, guid: 2f188997417a7da4d8710f8868a8474b, type: 2}
   flightFrame: {fileID: 9185683531308584839, guid: 177231b2d4a4c134f92738ecba0e4ca2, type: 3}
+  gridCellCount: 5
   flightsArray: []
+  gridLayoutGroup: {fileID: 1162864714}
 --- !u!1 &1372214214
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +847,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372214215}
+  - component: {fileID: 1372214216}
+  - component: {fileID: 1372214217}
   m_Layer: 0
   m_Name: PlayerInput2
   m_TagString: Untagged
@@ -754,6 +871,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372214216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372214214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 5fca92c98342c224ca8afd02a8fb65cb, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1372214217}
+        m_TargetAssemblyTypeName: FrameInputter, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ef550418-ae04-473d-9714-1a628fd78a32
+    m_ActionName: 'Player2/Move[/Keyboard/i,/Keyboard/k,/Keyboard/j,/Keyboard/l]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1372214217}
+        m_TargetAssemblyTypeName: FrameInputter, Assembly-CSharp
+        m_MethodName: OnConfirm
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5b499c91-44bd-426a-abd9-84e2516afd83
+    m_ActionName: 'Player2/Avoid[/Keyboard/u]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1372214217}
+        m_TargetAssemblyTypeName: FrameInputter, Assembly-CSharp
+        m_MethodName: OnCancel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4952ea87-02c6-46b5-b416-f8fee1573289
+    m_ActionName: 'Player2/UseUlt[/Keyboard/o]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player2
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1372214217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372214214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d42517c545b6f42a8d1b9d5e18e7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FrameInputter
 --- !u!1 &1622527973
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +1051,7 @@ GameObject:
   - component: {fileID: 1666696194}
   - component: {fileID: 1666696196}
   - component: {fileID: 1666696195}
+  - component: {fileID: 1666696197}
   m_Layer: 5
   m_Name: Blue
   m_TagString: Untagged
@@ -908,6 +1116,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666696193}
   m_CullTransparentMesh: 1
+--- !u!114 &1666696197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666696193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d96c4bba6cd3e147ac5102ef1e57590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPickUI
 --- !u!1 &1729885656
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +1177,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1820278299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820278301}
+  - component: {fileID: 1820278300}
+  m_Layer: 0
+  m_Name: MatchManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1820278300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820278299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a71a75737204a047998a98d120b8d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MatchManager
+  canBeDestroy: 0
+  tmp: {fileID: 471463568}
+  needPlayers: 2
+  currentPlayers: 0
+--- !u!4 &1820278301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820278299}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.09594, y: 0.86228, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -968,3 +1236,4 @@ SceneRoots:
   - {fileID: 814148400}
   - {fileID: 1372214215}
   - {fileID: 574393981}
+  - {fileID: 1820278301}

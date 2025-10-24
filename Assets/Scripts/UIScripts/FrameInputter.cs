@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class FrameInputter : MonoBehaviour,
+public class FrameInputter : MonoBehaviour
 {
-    public event Action<int> onMove;
+    public event Action<Vector2> onMove;
     public event Action onConfrim;
     public event Action onCancel;
     public void OnMove(InputAction.CallbackContext context)
@@ -12,14 +12,7 @@ public class FrameInputter : MonoBehaviour,
         if (context.started)
         {
             var val = context.ReadValue<Vector2>();
-            if(val.y >0)
-            {
-                onMove?.Invoke(-1);
-            }
-            else if(val.y < 0)
-            {
-                onMove?.Invoke(1);
-            }
+            onMove?.Invoke(val);
         }
 
     }
@@ -35,7 +28,7 @@ public class FrameInputter : MonoBehaviour,
     {
         if (context.started)
         {
-            Debug.Log("cancel");
+            onCancel?.Invoke();
         }
     }
 }
