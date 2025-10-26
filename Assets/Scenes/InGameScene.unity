@@ -5677,7 +5677,7 @@ GameObject:
   - component: {fileID: 1831301166}
   - component: {fileID: 1831301165}
   m_Layer: 0
-  m_Name: GlobalVolume
+  m_Name: InGameVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5699,7 +5699,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 3f9215ea0144899419cfbc0957140d3f, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 877fe8a3009d88c4c8eebf4a3f0b5774, type: 2}
 --- !u!4 &1831301166
 Transform:
   m_ObjectHideFlags: 0

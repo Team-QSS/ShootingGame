@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7486b3952266ae74597a3ab754022ebc, type: 3}
+  m_Name: ChainSawSO
+  m_EditorClassIdentifier: Assembly-CSharp::FlightsDataSO
+  code: 1
+  flightName: "\uCCB4\uC778\uC18C"
+  flightSprite: {fileID: 21300000, guid: a0942762a4f92744f8e71e6abac93ef6, type: 3}
+  flightDescription: "\uD558\uC774\uD37C \uB8E8\uD504 \uC0AC\uAC74 \uC774\uC804\uC5D4
+    \uD574\uC801\uC120\uC73C\uB85C \uC545\uBA85 \uB192\uC558\uB358 \uD568\uC120..\n\uC774\uC81C\uB294
+    \uC218\uAC70\uB418\uC5B4 \uACBD\uCC30\uC120\uC774 \uB418\uC5C8\uB2E4"
