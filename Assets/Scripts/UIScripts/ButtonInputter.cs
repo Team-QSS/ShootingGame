@@ -12,11 +12,11 @@ public class ButtonInputter : MonoBehaviour
         if (context.started)
         {
             var val = context.ReadValue<Vector2>();
-            if(val.y >0)
+            if(val.y >0 || val.x > 0)
             {
                 onMove?.Invoke(-1);
             }
-            else if(val.y < 0)
+            else if(val.y < 0|| val.x < 0)
             {
                 onMove?.Invoke(1);
             }
