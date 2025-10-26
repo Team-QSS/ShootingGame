@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class FrameInputter : MonoBehaviour
 {
     public event Action<Vector2> onMove;
+    public event Action onMoveSet;
     public event Action onConfrim;
     public event Action onCancel;
     public void OnMove(InputAction.CallbackContext context)
@@ -13,6 +14,7 @@ public class FrameInputter : MonoBehaviour
         {
             var val = context.ReadValue<Vector2>();
             onMove?.Invoke(val);
+            onMoveSet?.Invoke();
         }
 
     }

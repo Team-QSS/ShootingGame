@@ -31,6 +31,11 @@ public class FlightsGrid : MonoBehaviour
         return null;
     }
 
+    public FlightsDataSO ReturnFlightData(int index)
+    {
+        return flightsDataArraySO.flightData[index];
+    }
+
     public int ReturnIndex(Vector2 pos, int index)
     {
         var origin = index;
