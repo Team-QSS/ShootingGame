@@ -4,7 +4,9 @@ using UtilScripts;
 
 public class PlayerPickDataManager : SingleMono<PlayerPickDataManager>
 {
+    public FlightsDataArraySO flightsDataArraySO;
     [SerializeField] private List<FlightCode> players;
+    
 
     public void Initalize()
     {
@@ -21,5 +23,10 @@ public class PlayerPickDataManager : SingleMono<PlayerPickDataManager>
         {
             players[index] = flightCode;
         }
+    }
+
+    public FlightCode GetCodeByIndex(int index)
+    {
+        return flightsDataArraySO.flightData[index].code;
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class FlightsGrid : MonoBehaviour
 {
-    [SerializeField] private FlightsDataArraySO flightsDataArraySO;
+
     [SerializeField] private GameObject flightFrame;
     [SerializeField] private int gridCellCount;
     [SerializeField] private List<GameObject> flightsArray;
@@ -12,7 +12,7 @@ public class FlightsGrid : MonoBehaviour
 
     public void Initialize()
     {
-        foreach (var o in flightsDataArraySO.flightData)
+        foreach (var o in PlayerPickDataManager.Instance.flightsDataArraySO.flightData)
         {
             var frame=Instantiate(flightFrame, gameObject.transform);
             flightsArray.Add(frame);
@@ -33,7 +33,7 @@ public class FlightsGrid : MonoBehaviour
 
     public FlightsDataSO ReturnFlightData(int index)
     {
-        return flightsDataArraySO.flightData[index];
+        return PlayerPickDataManager.Instance.flightsDataArraySO.flightData[index];
     }
 
     public int ReturnIndex(Vector2 pos, int index)

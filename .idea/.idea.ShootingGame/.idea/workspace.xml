@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="72a743b8-4625-4694-a165-5bd810a9a327" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGameScene/InGameVolume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGameScene/InGameVolume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapPanel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/MatchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/MatchManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveScripts/DotDataConnecter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveScripts/DotDataConnecter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/StageDataSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/StageDataSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StageScripts/StageDotManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StageScripts/StageDotManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/DotInputConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/DotInputConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/FlightsGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/FlightsGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/PlayerPickUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/PlayerPickUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

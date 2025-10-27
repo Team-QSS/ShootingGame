@@ -6,10 +6,13 @@ public class PlayerPickUI : MonoBehaviour,IGetSetter<int>
     public event Func<int,GameObject> onGet;
     public event Func<Vector2,int,int> onSendMove;
     public event Action onExecute;
+    public event Action<int, FlightCode> onSetCharacter;
     public event Action onCancel;
     private bool _isPicked = false;
     
     private int _currentIndex;
+
+    private int _selfIndex;
     
     public int Get()=>_currentIndex;
     public void Set(int value)=>_currentIndex = value;
@@ -38,6 +41,7 @@ public class PlayerPickUI : MonoBehaviour,IGetSetter<int>
         if (!_isPicked)
         {
             onExecute?.Invoke();
+            onSetCharacter?.Invoke(_selfIndex,PlayerPickDataManager.Instance.GetCodeByIndex(_currentIndex));
             _isPicked = true;
         }
     }
@@ -49,6 +53,11 @@ public class PlayerPickUI : MonoBehaviour,IGetSetter<int>
             onCancel?.Invoke();
             _isPicked = false;
         }
+    }
+
+    public void SetSelfIndex(int index)
+    {
+        _selfIndex = index;
     }
     
 }
