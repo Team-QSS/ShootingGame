@@ -1,13 +1,18 @@
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DotInputConnecter : MonoBehaviour,IConnecter
 {
     [SerializeField] private ButtonInputter[] buttonInputters;
     [SerializeField] private StageDescriptionUI stageDescriptionUI;
+    [SerializeField] private ScreenFadeInner screenFadeInner;
+    [SerializeField] private PlayerStageSave playerStageSave;
 
     private void Start()
     {
         Connect();
+        StageDotManager.Instance.Initialize(playerStageSave.stage.limitStage);
         StageDotManager.Instance.SetFrame(0);
     }
     
@@ -18,6 +23,7 @@ public class DotInputConnecter : MonoBehaviour,IConnecter
         for (int i = 0; i < buttonInputters.Length; i++)
         {
             buttonInputters[i].onMove += StageDotManager.Instance.MoveFrame;
+            buttonInputters[i].onConfrim += screenFadeInner.Fade;
         }
     }
 
@@ -28,6 +34,7 @@ public class DotInputConnecter : MonoBehaviour,IConnecter
         for (int i = 0; i < buttonInputters.Length; i++)
         {
             buttonInputters[i].onMove -= StageDotManager.Instance.MoveFrame;
+            buttonInputters[i].onConfrim -= screenFadeInner.Fade;
         }
     }
 }

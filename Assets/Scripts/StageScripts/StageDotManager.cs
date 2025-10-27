@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UtilScripts;
 
 public class StageDotManager : SceneSingleMono<StageDotManager>
 {
     [SerializeField] private GameObject dotPrefab;
     [SerializeField] private GameObject frameDot;
     [SerializeField] private List<GameObject> dots;
-    [SerializeField] private StageDataArraySO stageDataArray;
     [SerializeField] private float dotDistance;
     [SerializeField] private int currentIndex;
 
@@ -59,11 +59,12 @@ public class StageDotManager : SceneSingleMono<StageDotManager>
         }
         frameDot.gameObject.transform.position = dots[currentIndex].transform.position;
         CameraManager.Instance.SetTarget(dots[currentIndex].transform.GetChild(0).transform);
+        MapManager.Instance.SetCurrentStageByIndex(currentIndex);
         onMove?.Invoke();
     }
     public StageDataSO GetCurrentStageData()
     {
-        return stageDataArray.stageDataArray[currentIndex];
+        return MapManager.Instance.GetStageData(currentIndex);
     }
     
     

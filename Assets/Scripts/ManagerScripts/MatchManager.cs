@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using TMPro;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UtilScripts;
 
-public class MatchManager : SingleMono<MatchManager>
+public class MatchManager : SceneSingleMono<MatchManager>
 {
     [SerializeField] private TextMeshProUGUI tmp;
     [SerializeField] private int needPlayers;
@@ -32,6 +33,11 @@ public class MatchManager : SingleMono<MatchManager>
         {
             tmp.text = currentPlayers+"/"+needPlayers;
         }
+    }
+
+    public int GetNeedPlayers()
+    {
+        return needPlayers;
     }
     
 }
