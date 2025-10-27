@@ -9,7 +9,7 @@ public class MatchManager : SingleMono<MatchManager>
     [SerializeField] private TextMeshProUGUI tmp;
     [SerializeField] private int needPlayers;
     [SerializeField] private int currentPlayers;
-    private string _inGameSceneHash = "InGameScene";
+    private string _inGameSceneHash = "MapPanel";
 
     public void OnReady()
     {

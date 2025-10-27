@@ -4,8 +4,9 @@ using UnityEngine;
 public class CameraManager : SceneSingleMono<CameraManager>
 {
     [SerializeField] private float moveSpeed = 3f; 
-    private Transform target;                   
+    public Transform target;                   
     private Coroutine _moveRoutine;               
+    private Coroutine _shakeRoutine;               
 
     private void Start()
     {
@@ -40,5 +41,33 @@ public class CameraManager : SceneSingleMono<CameraManager>
 
         _moveRoutine = null;
     }
-}
+    
+    public void ShakeCamera(float duration = 0.3f, float magnitude = 0.2f)
+    {
+        if (_shakeRoutine != null)
+        {
+            StopCoroutine(_shakeRoutine);
+            _shakeRoutine = null;
+        }
+        _shakeRoutine = StartCoroutine(ShakeRoutine(duration, magnitude));
+    }
 
+    private IEnumerator ShakeRoutine(float duration, float magnitude)
+    {
+        Vector3 originalPos = transform.position;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            float offsetX = Random.Range(-1f, 1f) * magnitude;
+            float offsetY = Random.Range(-1f, 1f) * magnitude;
+            transform.position = new Vector3(originalPos.x + offsetX, originalPos.y + offsetY, originalPos.z);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        
+        transform.position = originalPos;
+        _shakeRoutine = null;
+    }
+}

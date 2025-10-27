@@ -4,4 +4,5 @@ using UnityEngine;
 public class StageDataSO : ScriptableObject
 {
     [TextArea(3, 10)] public string stageName;
+    public Sprite stageImage;
 }

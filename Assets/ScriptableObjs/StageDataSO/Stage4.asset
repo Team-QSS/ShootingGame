@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Stage4
   m_EditorClassIdentifier: Assembly-CSharp::StageDataSO
   stageName: "\uC2A4\uD14C\uC774\uC9C04\n<\uC0AC\uB839\uD0D1>"
+  stageImage: {fileID: 21300000, guid: 4be503029d2dfdd49acc3aaa8c8dfb41, type: 3}

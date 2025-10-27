@@ -38,7 +38,7 @@ public class PlayerStageSave : MonoBehaviour,ISaveAble
         _saveManager.RemoveData(GetSavePath());
     }
 
-    void Start()
+    void Awake()
     {
         _saveManager = SaveManager.Instance;
         OnLoad();

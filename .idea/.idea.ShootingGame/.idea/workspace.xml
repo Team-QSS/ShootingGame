@@ -7,8 +7,21 @@
     <list default="true" id="72a743b8-4625-4694-a165-5bd810a9a327" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/PF스타더스트 3.0 (3) SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/PF스타더스트 3.0 (3) SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapPanel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonInputter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/ButtonInputter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/StageDataSO/Stage5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/CameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/MatchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/MatchManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/SaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveScripts/PlayerStageSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveScripts/PlayerStageSave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/StageDataSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/StageDataSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StageScripts/StageDotManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StageScripts/StageDotManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/DotInputConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/DotInputConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
