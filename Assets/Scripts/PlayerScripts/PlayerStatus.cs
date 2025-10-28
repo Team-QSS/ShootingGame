@@ -49,6 +49,11 @@ public class PlayerStatus : MonoBehaviour,IStatusSetter
         Debug.Log(playerRuntimeStat.attackSpeed.Value);
     }
 
+    public void ChangeFlightStat(FlightDataSO data)
+    {
+        flightData = data;
+    }
+
     private void Awake()
     {
         ResetStat();

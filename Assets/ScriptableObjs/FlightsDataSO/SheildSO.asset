@@ -17,3 +17,4 @@ MonoBehaviour:
   flightSprite: {fileID: 21300000, guid: f7c6eb5d30984f04b8f08338f3a1eedd, type: 3}
   flightDescription: "\uD558\uC774\uD37C\uB8E8\uD504\uB97C \uAC1C\uCC99\uD558\uAE30
     \uC2DC\uC791\uD560\uB54C \uC0AC\uC6A9\uB41C \uAE30\uCCB4"
+  flightDataSO: {fileID: 11400000, guid: 4b90a58f64a27234787aba85223c6980, type: 2}

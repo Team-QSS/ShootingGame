@@ -17,6 +17,7 @@ public class PlayerPickConnecter : MonoBehaviour,IConnecter
 
     private void Start()
     {
+        PlayerPickDataManager.Instance.Initalize();
         Connect();
         for (var index = 0; index < flightFrameObjects.Length; index++)
         {
@@ -33,12 +34,14 @@ public class PlayerPickConnecter : MonoBehaviour,IConnecter
             var t = flightFrameObjects[index].playerPick;
             var v = flightFrameObjects[index].frameInputter;
             var c =  flightFrameObjects[index].descriptionUI;
+            t.SetSelfIndex(index);
             v.onMove += t.OnDirInput;
             v.onConfrim += t.Execute;
             v.onCancel += t.CancelExecute;
             t.onGet += flightsGrid.ReturnObj;
             t.onSendMove += flightsGrid.ReturnIndex;
             t.onExecute += MatchManager.Instance.OnReady;
+            t.onSetCharacter += PlayerPickDataManager.Instance.ChangePick;
             c.getIndex += t.Get;
             c.getFlightsData += flightsGrid.ReturnFlightData;
             v.onMoveSet += c.OnUpdateUI;
@@ -58,6 +61,7 @@ public class PlayerPickConnecter : MonoBehaviour,IConnecter
             t.onGet -= flightsGrid.ReturnObj;
             t.onSendMove -= flightsGrid.ReturnIndex;
             t.onExecute -= MatchManager.Instance.OnReady;
+            t.onSetCharacter -= PlayerPickDataManager.Instance.ChangePick;
             t.onCancel -= MatchManager.Instance.OnLeave;
             c.getIndex -= t.Get;
             c.getFlightsData -= flightsGrid.ReturnFlightData;

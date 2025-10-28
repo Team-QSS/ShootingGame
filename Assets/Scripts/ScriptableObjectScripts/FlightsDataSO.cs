@@ -8,4 +8,5 @@ public class FlightsDataSO : ScriptableObject
     public Sprite flightSprite;
     [TextArea]
     public string flightDescription;
+    public FlightDataSO flightDataSO;
 }

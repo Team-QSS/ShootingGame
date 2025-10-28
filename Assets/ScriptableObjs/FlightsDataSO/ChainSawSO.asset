@@ -18,3 +18,4 @@ MonoBehaviour:
   flightDescription: "\uD558\uC774\uD37C \uB8E8\uD504 \uC0AC\uAC74 \uC774\uC804\uC5D4
     \uD574\uC801\uC120\uC73C\uB85C \uC545\uBA85 \uB192\uC558\uB358 \uD568\uC120..\n\uC774\uC81C\uB294
     \uC218\uAC70\uB418\uC5B4 \uACBD\uCC30\uC120\uC774 \uB418\uC5C8\uB2E4"
+  flightDataSO: {fileID: 11400000, guid: 00aa3dc9d19f69547b50245df2c3a941, type: 2}
