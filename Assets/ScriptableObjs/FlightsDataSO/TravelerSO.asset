@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7486b3952266ae74597a3ab754022ebc, type: 3}
   m_Name: TravelerSO
   m_EditorClassIdentifier: Assembly-CSharp::FlightsDataSO
+  code: 0
   flightName: "\uD2B8\uB798\uBE14\uB7EC"
   flightSprite: {fileID: 21300000, guid: dc9e00c816810444ea94a49e6d331444, type: 3}
   flightDescription: "\uD558\uC774\uD37C\uB8E8\uD504\uB97C \uC5EC\uD589\uC911\uC778
     \uB0A1\uC740 \uD568\uC120"
+  flightDataSO: {fileID: 11400000, guid: ec2b86e951bb7fe459dbe6d3029e6d86, type: 2}

@@ -6,11 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="72a743b8-4625-4694-a165-5bd810a9a327" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootingGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PickPanel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickConnecter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickConnecter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/ScreenFadeOutter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/ScreenFadeOutter.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/PF스타더스트 3.0 (3) SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/PF스타더스트 3.0 (3) SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerPrefab/PlayerSample.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerPrefab/PlayerSample.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/InGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/InGameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/ChainSawSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/ChainSawSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/GunnerSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/GunnerSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/SheildSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/SheildSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/SolidSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/SolidSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/TravelerSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjs/FlightsDataSO/TravelerSO.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManagerScripts/PlayerPickDataManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/FlightsGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/FlightsGrid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/PlayerPickUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/PlayerPickUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightStatusSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightStatusSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectScripts/FlightsDataSO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +77,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIScripts/StartButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UtilScripts/SceneSingleMono.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WayPointsScripts/WayPoints.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@be6c4fd0abf5/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@1cb7d86fc7ff/Runtime/SplineAnimate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@f250afc9b68d/Runtime/UGUI/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
