@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     public event Func<GameObject> onUseUlt;
     public void OnMove(InputAction.CallbackContext context)
     {
+        //EventManager.Instance.Invoke(EventKey.ShowDescriptionPanel,false);
         var dir = context.ReadValue<Vector2>();
         onMove?.Invoke(dir);
     }
@@ -16,7 +17,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (context.started)
         {
-            //Debug.Log("Avoid");
+            EventManager.Instance.Invoke(EventKey.ShowDescriptionPanel,false);
         }
 
     }
@@ -24,6 +25,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (context.started)
         {
+            EventManager.Instance.Invoke(EventKey.ShowDescriptionPanel,false);
             var obj = onUseUlt?.Invoke();
             if (obj != null)
             {

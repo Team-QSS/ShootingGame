@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3e96dcb5796e64ab21e7a3b59df8d1, type: 3}
   m_Name: HyperLoopTimeTableSO
   m_EditorClassIdentifier: Assembly-CSharp::MapTimeTableSO
-  set:
-  - timeLine: 1
-    eventTypes: 02000000
+  set: 010000000500000007000000080000000b000000

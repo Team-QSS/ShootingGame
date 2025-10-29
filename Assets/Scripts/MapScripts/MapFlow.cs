@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
-public class MapFlow : MonoBehaviour
+public abstract class MapFlow : MonoBehaviour
 {
     public MapTimeTableSO timeTable;
-    protected Dictionary<int,List<EventKey>> eventTable = new();
+    protected Dictionary<int,Action> eventTable = new();
     protected List<int> timeList = new();
 
     private void Start()
@@ -19,30 +18,39 @@ public class MapFlow : MonoBehaviour
 
     public virtual void Initialize()
     {
+        timeList.Clear();
+    
         foreach (var t in timeTable.set)
         {
-            if (!eventTable.ContainsKey(t.timeLine))
+            if (!timeList.Contains(t))
             {
-                eventTable.Add(t.timeLine,t.eventTypes);
+                timeList.Add(t);
             }
-        }
-
-        foreach (var e in timeList)
-        {
-            if (!timeList.Contains(e))
+            
+            if (!eventTable.ContainsKey(t))
             {
-                timeList.Add(e);
+                eventTable[t] = () => { }; 
             }
         }
         timeList.Sort();
+        eventTable[CheckIndex(1)] += OnGameStartPanel;
     }
 
+
+
+    public int CheckIndex(int num)
+    {
+        if (timeList.Contains(num))
+        {
+            return num;
+        }
+        return 0;
+    }
+    
     public void CheckTime(float time)
     {
-        Debug.Log("CheckTime " + time);
         while (timeList.Count>0 &&time >= timeList[0])
         {
-
             Execute(timeList[0]);
             timeList.RemoveAt(0);
         }
@@ -50,10 +58,12 @@ public class MapFlow : MonoBehaviour
 
     public void Execute(int key)
     {
-        foreach (var e in eventTable[key])
-        {
-            EventManager.Instance.Invoke(e);
-        }
+        eventTable[key]?.Invoke();
+    }
+
+    public void OnGameStartPanel()
+    {
+        EventManager.Instance.Invoke(EventKey.ShowWavePanel,"게임 시작");
     }
     
 

@@ -42,6 +42,6 @@ Material:
     - _ScanlineWidth: 0.147
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _HoloColor: {r: 0.6679245, g: 0.6679245, b: 0.6679245, a: 1}
+    - _HoloColor: {r: 0.13962269, g: 0.13962269, b: 0.13962269, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
