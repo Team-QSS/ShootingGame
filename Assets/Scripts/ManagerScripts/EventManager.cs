@@ -11,6 +11,7 @@ public enum EventKey
     //카메라
     
     //UI
+    ShowWavePanel
 }
 
 public class EventManager : SceneSingleMono<EventManager>
