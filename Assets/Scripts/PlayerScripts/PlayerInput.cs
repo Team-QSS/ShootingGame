@@ -1,23 +1,46 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum PlayerInputType
+{
+    Move,
+    Ultimate,
+    Settings
+}
+
 public class PlayerInput : MonoBehaviour
 {
-    public event Action<Vector2> onMove;
+    public event Action<Vector2> sendDir;
     public event Action onAvoid;
     public event Func<GameObject> onUseUlt;
+
+    [SerializeField]private PlayerInputType _currentKeyBindTutorial;
+
+    private void Start()
+    {
+        EventManager.Instance.AddListener(EventKey.ChangeKeyBindEvents,new Action<PlayerInputType>(ChangeCurrentKeyBind));
+        _currentKeyBindTutorial = PlayerInputType.Settings;
+    }
+    
     public void OnMove(InputAction.CallbackContext context)
     {
-        //EventManager.Instance.Invoke(EventKey.ShowDescriptionPanel,false);
+        if (_currentKeyBindTutorial == PlayerInputType.Move)
+        {
+            EventManager.Instance?.Invoke(EventKey.ShowDescriptionPanel,false);
+        }
         var dir = context.ReadValue<Vector2>();
-        onMove?.Invoke(dir);
+        sendDir?.Invoke(dir);
     }
     public void OnAvoid(InputAction.CallbackContext context)
     {
         if (context.started)
         {
-            EventManager.Instance.Invoke(EventKey.ShowDescriptionPanel,false);
+            if (_currentKeyBindTutorial == PlayerInputType.Ultimate)
+            {
+                EventManager.Instance?.Invoke(EventKey.ShowDescriptionPanel,false);
+            }
         }
 
     }
@@ -25,16 +48,24 @@ public class PlayerInput : MonoBehaviour
     {
         if (context.started)
         {
-            EventManager.Instance.Invoke(EventKey.ShowDescriptionPanel,false);
+            if (_currentKeyBindTutorial == PlayerInputType.Settings)
+            {
+                EventManager.Instance?.Invoke(EventKey.ShowDescriptionPanel,false);
+            }
             var obj = onUseUlt?.Invoke();
             if (obj != null)
             {
                 ObjectPoolManager.Instance.Get(obj, Vector2.zero, Vector3.zero);
             }
-            else
-            {
-                
-            }
         }
     }
+
+    public void ChangeCurrentKeyBind(PlayerInputType newKeyBind)
+    {
+        if (_currentKeyBindTutorial != newKeyBind)
+        {
+            _currentKeyBindTutorial = newKeyBind;
+        }
+    }
+    
 }

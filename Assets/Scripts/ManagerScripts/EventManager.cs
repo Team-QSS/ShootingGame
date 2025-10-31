@@ -15,6 +15,10 @@ public enum EventKey
     ShowDescriptionPanel,
     ActiveImageOnDescriptionPanel,
     ChangeTextOnDescriptionPanel,
+    
+    //시스템
+    ChangeKeyBindEvents
+
 }
 
 public class EventManager : SceneSingleMono<EventManager>

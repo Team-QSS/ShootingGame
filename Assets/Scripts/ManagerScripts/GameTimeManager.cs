@@ -26,7 +26,7 @@ public class GameTimeManager : SceneSingleMono<GameTimeManager>
 
             if (!isRunning)
                 continue;
-            Debug.Log(elapsedTime);
+//            Debug.Log(elapsedTime);
             elapsedTime += Time.fixedDeltaTime;
             onClock?.Invoke(elapsedTime);
         }

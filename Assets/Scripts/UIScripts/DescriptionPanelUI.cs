@@ -19,6 +19,7 @@ public class DescriptionPanelUI : MonoBehaviour
     {
         if (!active)
         {
+            GameTimeManager.Instance.SetGlobalTime(1);
             GameTimeManager.Instance.StartClock();
         }
         gameObject.SetActive(active);

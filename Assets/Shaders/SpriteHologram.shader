@@ -1,4 +1,4 @@
-Shader "Custom/SpriteHologram"
+Shader "Custom/SpriteHologram_Unscaled"
 {
     Properties
     {
@@ -19,7 +19,6 @@ Shader "Custom/SpriteHologram"
         _FlickerSpeed ("Flicker Speed", Float) = 10.0
         _FlickerIntensity ("Flicker Intensity", Range(0, 1)) = 0.1
         
-        // Transparency
         _Alpha ("Alpha", Range(0, 1)) = 0.8
         
         [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
@@ -84,6 +83,8 @@ Shader "Custom/SpriteHologram"
             
             float _Alpha;
             
+            float _UnscaledTime;
+            
             float rand(float2 co)
             {
                 return frac(sin(dot(co.xy, float2(12.9898, 78.233))) * 43758.5453);
@@ -93,8 +94,8 @@ Shader "Custom/SpriteHologram"
             {
                 v2f o;
                 
-                float glitch = rand(floor(_Time.y * _GlitchSpeed)) * _GlitchIntensity;
-                if (rand(float2(_Time.y, 0)) > 0.9)
+                float glitch = rand(floor(_UnscaledTime * _GlitchSpeed)) * _GlitchIntensity;
+                if (rand(float2(_UnscaledTime, 0)) > 0.9)
                 {
                     v.vertex.x += glitch * 0.1;
                 }
@@ -115,10 +116,10 @@ Shader "Custom/SpriteHologram"
             {
                 fixed4 c = tex2D(_MainTex, i.texcoord) * i.color;
                 
-                float scanline = frac(i.texcoord.y * 10.0 + _Time.y * _ScanlineSpeed);
+                float scanline = frac(i.texcoord.y * 10.0 + _UnscaledTime * _ScanlineSpeed);
                 scanline = smoothstep(_ScanlineWidth, 0, abs(scanline - 0.5));
                 
-                float flicker = 1.0 - _FlickerIntensity * rand(floor(_Time.y * _FlickerSpeed));
+                float flicker = 1.0 - _FlickerIntensity * rand(floor(_UnscaledTime * _FlickerSpeed));
                 
                 float2 texelSize = float2(0.01, 0.01);
                 float alphaUp = tex2D(_MainTex, i.texcoord + float2(0, texelSize.y)).a;
@@ -132,11 +133,8 @@ Shader "Custom/SpriteHologram"
                 c.rgb = lerp(c.rgb, _HoloColor.rgb, 0.5);
                 
                 c.rgb += scanline * _ScanlineIntensity * _HoloColor.rgb;
-
                 c.rgb += rim * _HoloColor.rgb;
-                
                 c.rgb *= flicker;
-                
                 c.a *= _Alpha * flicker;
                 
                 clip(c.a - 0.01);

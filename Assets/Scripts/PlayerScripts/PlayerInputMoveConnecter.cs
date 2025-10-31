@@ -6,12 +6,12 @@ public class PlayerInputMoveConnecter : MonoBehaviour,IConnecter
     [SerializeField] private Bounding bounder;
     public void Connect()
     {
-        playerInput.onMove += playerMove.SetMove;
-        playerInput.onMove += bounder.Bound;
+        playerInput.sendDir += playerMove.SetMove;
+        playerInput.sendDir += bounder.Bound;
     }
     public void Disconnect()
     {
-        playerInput.onMove -= playerMove.SetMove;
+        playerInput.sendDir -= playerMove.SetMove;
     }
     private void Start()
     {
